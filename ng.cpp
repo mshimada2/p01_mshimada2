@@ -14,7 +14,7 @@ int intNum;
 int advNum;
 srand(time(NULL));
 
-int randNum = rand()%10+1;
+int randNum = 5;
 
     cout<<endl<<"Welcome to the Number Guesser Game!"; 
         cout<<endl<<"Pick your level of difficulty: Easy, Medium, or Hard";
@@ -29,6 +29,15 @@ int randNum = rand()%10+1;
 
     cout<<endl<<"You must be a beginner. Correctly guess a number between 1 and 10:";
         cin>>easyNum; 
+if (easyNum == randNum)
+
+    cout<<endl<<"You must be a mind reader!";
+
+else if (easyNum != randNum)
+
+    cout<<endl<<"Wrong!";
+
+
 
  }
 
