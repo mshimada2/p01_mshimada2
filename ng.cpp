@@ -14,7 +14,7 @@ int intNum;
 int advNum;
 srand(time(NULL));
 
-int randNum = rand()%1+1;
+int randNum = rand()%3+1;
 int randNum2 = rand()%10+1;
 int randNum3 = rand()%100+1; 
 
@@ -30,7 +30,7 @@ int randNum3 = rand()%100+1;
  {
         
 
-    cout<<endl<<"You must be a beginner. Correctly guess a number between 1 and 10:  ";
+    cout<<endl<<"You must be a beginner. Correctly guess a number between 1 and 2:  ";
         cin>>easyNum; 
 
 
@@ -43,20 +43,14 @@ if (easyNum == randNum)
 {
 
 
-    cout<<endl<<"You must be a mind reader! ";
+    cout<<endl<<"Nice! ";
 
-
+}
 
 
 else if (easyNum != randNum)
 
     cout<<endl<<"Wrong! ";
-
-
-
- }
-
-
 
 
 
