@@ -10,32 +10,12 @@ int main()
  
 string difficulty;
 int easyNum;
-int intNum;
-int advNum;
 srand(time(NULL));
 
-int randNum = rand()%3+1;
-int randNum2 = rand()%10+1;
-int randNum3 = rand()%100+1; 
+int randNum = rand() % 10 + 1; 
 
-    cout<<endl<<"Welcome to the Number Guesser Game! "; 
-        cout<<endl<<"Pick your level of difficulty: Easy, Medium, or Hard ";
-
- cin>>difficulty;
-
- 
- 
- if (difficulty == "easy" || "Easy")
- 
- {
-        
-
-    cout<<endl<<"You must be a beginner. Correctly guess a number between 1 and 2:  ";
-        cin>>easyNum; 
-
-
-
- }       
+    cout<<endl<<"Welcome to the Number Guesser Game! The goal of this game is to type in the right number that the program picks randomnly from 1-10. Please enter a number through 1-10:  "; 
+        cin>>easyNum;        
 
 
 if (easyNum == randNum)
@@ -43,17 +23,16 @@ if (easyNum == randNum)
 {
 
 
-    cout<<endl<<"Nice! ";
+    cout<<endl<<"Are you related to Proffesor X ? You got it right!  ";
 
 }
 
+else
+{
 
-else if (easyNum != randNum)
+cout<<endl<<"Wrong! ";
 
-    cout<<endl<<"Wrong! ";
-
-
-
+}
 
 return 0;
 
