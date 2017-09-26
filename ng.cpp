@@ -7,8 +7,7 @@ using namespace std;
 
 int main()
 {
- 
-string difficulty;
+
 int easyNum;
 srand(time(NULL));
 
