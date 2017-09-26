@@ -9,6 +9,7 @@ int main()
 {
 
 int easyNum;
+
 srand(time(NULL));
 
 int randNum = rand() % 10 + 1; 
@@ -26,12 +27,24 @@ if (easyNum == randNum)
 
 }
 
-else
+else if (easyNum > randNum) 
 {
+int lower = easyNum - randNum;
 
-cout<<endl<<"Wrong! ";
+cout<<endl<<"Wrong! You missed the correct number by "<<lower<<" . ";
 
 }
+
+else 
+
+{
+int higher = randNum - easyNum;
+
+cout<<endl<<"Wrong! You missed the correct number by "<<higher<<" . ";
+
+
+}
+
 
 return 0;
 
